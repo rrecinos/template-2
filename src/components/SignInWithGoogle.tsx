@@ -12,7 +12,7 @@ export default function SignInWithGoogle() {
       className="flex items-center justify-center gap-2 w-full px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50"
     >
       <Image
-        src="/google-logo.png"
+        src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
         alt="Google Logo"
         width={20}
         height={20}
