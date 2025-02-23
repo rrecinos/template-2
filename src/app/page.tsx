@@ -4,7 +4,6 @@ import { MagnifyingGlassIcon } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { getLatestSoftware } from '@/lib/firebase/firebaseUtils'
-import { Category } from '@/lib/constants'
 
 interface SoftwareEntry {
   id: string

@@ -1,16 +1,9 @@
 'use client'
 
-import { categories } from '@/lib/constants'
+import { categories, Category } from '@/lib/constants'
 import { useState, FormEvent } from 'react'
 import { submitSoftware } from '@/lib/firebase/firebaseUtils'
 import { useRouter } from 'next/navigation'
-
-interface Category {
-  id: string
-  name: string
-  description: string
-  count: number
-}
 
 export default function SubmitPage() {
   const [selectedPlan, setSelectedPlan] = useState<'free' | 'premium'>('free')
