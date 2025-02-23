@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rm -rf .next",
+    "clean:all": "rm -rf .next node_modules",
+    "vercel-build": "npm run clean && next build"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^0.0.48",
