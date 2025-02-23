@@ -5,6 +5,7 @@ import { doc, getDoc } from 'firebase/firestore'
 import { db } from '@/lib/firebase/firebase'
 import Link from 'next/link'
 import { ArrowLeftIcon } from '@heroicons/react/24/outline'
+import Image from 'next/image'
 
 interface SoftwareDetails {
   id: string
@@ -186,10 +187,12 @@ export default function SoftwareDetailPage({ params }: { params: { id: string } 
                   <h2 className="text-xl font-semibold text-gray-900 mb-4">Screenshots</h2>
                   <div className="grid grid-cols-2 gap-4">
                     {software.screenshots.map((screenshot, index) => (
-                      <img
+                      <Image
                         key={index}
                         src={screenshot}
                         alt={`${software.name} screenshot ${index + 1}`}
+                        width={500}
+                        height={300}
                         className="rounded-lg shadow-sm"
                       />
                     ))}

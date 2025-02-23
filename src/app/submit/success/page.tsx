@@ -19,7 +19,7 @@ export default function SuccessPage() {
           
           <p className="text-gray-600 mb-8">
             Your software listing has been submitted successfully. Our team will review your submission
-            and it will be published soon. We'll notify you via email once it's live.
+            and it will be published soon. We&apos;ll notify you via email once it&apos;s live.
           </p>
 
           <div className="space-y-4">
