@@ -1,6 +1,6 @@
 'use client'
 
-import { categories } from '@/app/page'
+import { categories } from '@/lib/constants'
 import { useState, FormEvent } from 'react'
 import { submitSoftware } from '@/lib/firebase/firebaseUtils'
 import { useRouter } from 'next/navigation'
